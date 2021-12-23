@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog 1</title>
+    <link rel="stylesheet" href="styleb.css" />
+  </head>
+  <body>
+    <!--BLOG-->
+    <section id="blog">
+      <div class="blog container">
+        <div class="blog1-top">
+          <h1 class="section-title">
+            <span>Blog 1</span> <br />
+            Load Balancing Algorithms
+          </h1>
+          <p>
+            <br />
+            <br />
+            <b>What is Load balancing?</b> <br /><br />
+            In computing, load adjusting alludes to the most common way of
+            distributing tasks and traffic over to assets (computers, servers),
+            fully intent on making their general performance more proficient.
+            Load balancing can improve the reaction time and stop unevenly
+            overloading servers while other servers are left inactive. Some
+            various strategies and algorithms can be utilized to brilliantly
+            stack balance customer access demands across server pools. The
+            procedure picked will rely upon the sort of service or application
+            being served and the situation with the network and servers at the
+            moment of the request. A load balancer is a software or hardware
+            device that keeps any one server from becoming overloaded. A
+            load-balancing algorithm is a logic that a load balancer uses to
+            distribute network traffic between servers (an algorithm is a set of
+            predefined rules). (Cloudfare, 2021) There are two main ways to
+            perform load balancing. They are Dynamic load balancing and Static
+            Load balancing. Dynamic load balancing works considering the present
+            status of every server and conveys traffic appropriately. Static
+            load balancing conveys traffic without making these changes. Some
+            static algorithms send equivalent traffic to every server in a pool,
+            either in a predefined order or at random order. <br />
+            <br />
+            <b>Why do we use Load Balancing?</b> <br />
+            <br />
+            Load balancers are exceptionally useful to server environments,
+            where heavy workloads or traffic can undoubtedly overwhelm a server
+            and undeniable degrees of server or service accessibility and
+            reaction times are mandatory to specific business processes or
+            ordered by SLAs. Load balancing plays a critical part in server
+            scalability. Commonly, server infrastructures and environments
+            should be able to scope up to oblige any uptick or flood in network
+            traffic. At the point when a server "scales up", it commonly turns
+            up various virtual servers and runs multiple applications. The
+            primary network device responsible for dispersing traffic across
+            these new instances is the load balancer. Without load balancers,
+            recently turned-on virtual servers wouldn't have the opportunity to
+            get the incoming traffic in a planned manner or on the other hand if
+            by any stretch of the imagination. Some virtual servers may even be
+            left dealing with zero traffic while others became over-loaded. Load
+            balancers also have the responsibility to detect inaccessible
+            servers and divert traffic to those still functional. When you use
+            an online service that is enabled with required load balancing
+            features even the firstly requested server is offline your request
+            can span multiple geographical location <br /><br />
+            <b>Different Types of Load Balancing</b> <br /><br />
+            Dynamic load balancing algorithms Unlike static load balancing
+            algorithms, dynamic algorithms consider the current load of every
+            one of the network units (nods) in the framework. In this
+            methodology, processes can be moved progressively from an overloaded
+            node to an underloaded unit to get quicker handling. While these
+            algorithms are considerably more muddled to plan, they can deliver
+            phenomenal outcomes, specifically, when the execution time shifts
+            enormously starting with one task then onto the next.
+          </p>
+          <br />
+          <p style="margin-left: 35px">
+            1. Least connection: Checks which servers have the least connections
+            open at that point and send traffic to those servers. This expects
+            all connections to require generally equivalent processing power.
+            <br /><br />
+          </p>
+
+          <p style="margin-left: 35px">
+            2. Weighted least connection: Enables administrators to relegate
+            various loads to every server, accepting that a few servers can deal
+            with a larger number of connections than others.
+          </p>
+          <br />
+          <p style="margin-left: 35px">
+            3. Weighted response time: Make equal the reaction time of every
+            server, and consolidate that with the number of connections every
+            server has open to figure out where to send traffic. By sending
+            traffic to the servers with the minimum reaction time, the algorithm
+            guarantees quicker service for clients.
+          </p>
+          <br />
+          <p style="margin-left: 35px">
+            4. Resource-based: Conveys load based on what assets every server
+            has accessible at that point. Specific programming (called an
+            "agent") running on every server estimates that the server's
+            accessible CPU and memory, and the load balancer queries the agent
+            prior to conveying traffic to that server.
+          </p>
+          <br /><br />
+          <p>
+            <b>Static load balancing algorithms</b> <br />
+            <br />
+            A load-balancing algorithm is "static" when it doesn't consider the
+            condition of the infrastructure for the convey of tasks. In this
+            way, the system state incorporates measures, like the load level
+            (and occasionally even over-load) of specific processors. All things
+            being equal, suppositions about the general system are made in
+            advance, for example, the arrival times and asset prerequisites of
+            receiving traffic.
+          </p>
+          <br />
+          <p style="margin-left: 35px">
+            1. Round robin: Round robin load balancing conveys traffic to a
+            rundown of servers in turn, using the Domain Name System (DNS). A
+            legitimate nameserver will have a rundown(list) of various A records
+            for a domain and give an alternate one because of each DNS query.
+          </p>
+          > <br />
+          <p style="margin-left: 35px">
+            2. Weighted Round robin: Permits an administrator to appoint various
+            loads to every server. Servers considered ready to deal with more
+            traffic will get somewhat more. Weighting can be designed inside DNS
+            records.
+          </p>
+          ><br />
+          <p style="margin-left: 35px">
+            3. IP hash: Joins receiving traffic's source and destination IP
+            addresses and utilizations a numerical capacity to change over it
+            into a hash. In view of the hash, the connection is allocated to a
+            particular server.
+          </p>
+          <br /><br /><br /><br /><br /><br /><br /><br />
+          <p>-Aravinda Jayatissa</p>
+        </div>
+      </div>
+    </section>
+    <!--BLOG end-->
+  </body>
+</html>
